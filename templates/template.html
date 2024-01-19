@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/pretty.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body id="body_container">
+    <header>
+        <h1 class="title">PeanutPanic</h1>
+    </header>
+    <nav>
+    <a class="{% if active_page == 'root' %}active{% endif %}" href="/">Home</a>
+    <a class="{% if active_page == 'peanut_immuno' %}active{% endif %}" href="/peanut_immuno">Peanut vs immune system</a>
+    <a class="{% if active_page == 'tips' %}active{% endif %}" href="/tips">Tips for students</a>
+    <a class="{% if active_page == 'research' %}active{% endif %}" href="/research">Reseach insights</a>
+    <a class="{% if active_page == 'sources' %}active{% endif %}" href="/sources">Sources</a>
+    <a class="{% if active_page == 'conclusion' %}active{% endif %}" href="/conclusion">Conclusion</a>
+    </nav>
+
+    <main id="main_container">
+        {% block content %}{% endblock %}
+    </main>
+
+
+    <footer >
+        <div id="footer">
+            <h2 id="footer_title">Peanut Allergy</h2>
+            <h5 id="copyright"> Copyright @ 2023 Tree Gen, Inc. </h5>
+            <h5> <a href= "/sources" >Sources</a> </h5>
+        </div>
+    </footer>
+</body>
+</html>
+
