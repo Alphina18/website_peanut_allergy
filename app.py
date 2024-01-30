@@ -21,6 +21,7 @@ def tips():
     # Add any specific logic for the tips page if needed
     return render_template('tips.html', active_page=active_page)
 
+
 @app.route('/research')  # Route for the research page
 def research():
     active_page = 'research'

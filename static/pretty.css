@@ -55,13 +55,63 @@ nav .active{
 
 }
 
-.text {
+.text_center {
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 
+.text_right {
+    text-align: right;
+    margin: 40px 5% 155px 55%; /* Adjust margins as needed */
+}
+
+.text_left {
+    text-align: left;
+    margin: 40px 55% 155px 5%;
+}
+
+.collage_1 {
+    max-width: 45vw; /* Set maximum width of the collage */
+    float: left; /* Float the collage to the left */
+    margin-left: 5%; /* Add margin to separate from the text */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust width as needed */
+    grid-gap: 10px; /* Adjust gap between images */
+}
+
+.collage_1 img {
+    max-width: 100%; /* Ensure images don't exceed the width of the collage container */
+    height: auto;
+}
+
+.collage_right {
+    max-width: 30vw; /* Set maximum width of the collage */
+    float: right; /* Float the collage to the left */
+    margin-right: 5%; /* Add margin to separate from the text */
+}
+
+.collage_right img {
+    max-width: 100%; /* Ensure images don't exceed the width of the collage container */
+    height: auto;
+}
+
+.collage_left {
+    max-width: 30vw; /* Set maximum width of the collage */
+    float: left; /* Float the collage to the left */
+    margin-left: 5%; /* Add margin to separate from the text */
+}
+
+.collage_left img {
+    max-width: 100%; /* Ensure images don't exceed the width of the collage container */
+    height: auto;
+}
+
+.bold_text {
+    font-size: large;
+    text-align: center;
+}
 footer{
     padding-top: 1px;
     width: 100%;
