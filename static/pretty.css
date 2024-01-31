@@ -119,6 +119,15 @@ nav .active{
     height: auto;
 }
 
+.collage_center {
+    max-width: 30vw; /* Set maximum width of the collage */
+}
+
+.collage_center img {
+    max-width: 100%; /* Ensure images don't exceed the width of the collage container */
+    height: auto;
+}
+
 .sources_left {
     text-align: left;
     margin-right: 30%;
