@@ -59,7 +59,18 @@ nav .active{
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
+}
 
+#text_intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.text_center_left {
+    text-align: left;
+    margin-left: 50%;
+    margin-right: 5%;
 }
 
 .text_right {
@@ -108,10 +119,30 @@ nav .active{
     height: auto;
 }
 
-.bold_text {
-    font-size: large;
-    text-align: center;
+.sources_left {
+    text-align: left;
+    margin-right: 30%;
+    margin-left: 10%;
 }
+
+.symptoms {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.common-symptoms,
+.severe-symptoms {
+    flex: 1;
+    padding: 0 18px;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+.left_list {
+    text-align: left;
+}
+
 footer{
     padding-top: 1px;
     width: 100%;
